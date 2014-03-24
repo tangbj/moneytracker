@@ -1,0 +1,16 @@
+{
+  "name": "moneytracker",
+  "version": "0.0.1",
+  "authors": [
+    "Dan Tang <tangbj.daniel@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
