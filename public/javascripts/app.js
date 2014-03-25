@@ -7,6 +7,10 @@ angular.module('moneyTrackerApp', ['ngRoute', 'ngResource'])
       templateUrl: 'partials/main',
       controller: 'MainCtrl'
     })
+    .when('/new', {
+      templateUrl: 'partials/new',
+      controller: 'NewCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     })

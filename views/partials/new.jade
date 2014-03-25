@@ -1,0 +1,21 @@
+div
+  form(name='transactionForm', role='form', ng-submit='submit(transactionForm)', novalidate)
+    div.form-group
+      label(for='amount') Amount
+      input.form-control(name='amount', type='number', placeholder='Amount', ng-model='data.transaction.amount', min='0', required)
+    div.form-group
+      label(for='Category') Category
+      input.form-control(name='category', type='text', placeholder='Category', ng-model='data.transaction.category', required)
+
+    div.form-group
+      label(for='Amount') Description
+      input.form-control(name='description', type='text', placeholder='Description', ng-model='data.transaction.description', required)
+
+    div.form-group
+      label(for='transactionDate') Transaction Date
+      br
+      input(name='transactionDate', type='date', ng-model='data.transaction.transactionDate', required)
+
+    div.form-group.has-error
+      p.help-block(ng-show='!transactionForm.$valid && submitted') Please ensure all fields are properly filled up.
+    input.btn.btn-primary(type='submit', value='Create Transaction')    

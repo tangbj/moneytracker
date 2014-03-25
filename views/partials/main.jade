@@ -1,5 +1,5 @@
 div(ng-repeat='transaction in data.transactions')
-  h3 {{ transaction.dateCreated | date : 'd MMM, y h:mm'}}
+  h3 {{ transaction.transactionDate | date : 'd MMM, y'}}
   p
     b Amount: 
     | ${{ transaction.amount }}

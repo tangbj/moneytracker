@@ -35,14 +35,6 @@ fs.readdirSync(pathName).forEach(function(file) {
 });
 
 mongoose.connect('mongodb://localhost/moneytracker');
-var Transaction = mongoose.model('Transaction');
-
-new Transaction({
-  amount: Math.floor(Math.random() * 10),
-  description: 'Lunch',
-  category: 'Food',
-  dateCreated: new Date()
-}).save();
 
 require('./lib/routes')(app);
 
