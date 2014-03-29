@@ -1,9 +1,9 @@
 angular.module('moneyTrackerApp')
   .controller('MainCtrl', ['$scope', 'TransactionResource', function($scope, TransactionResource) {
     $scope.data = {
-      transactions: []
+      transactions: [],
+      hello: 'world'
     }
-
     //obtains list of all transactiosn
     TransactionResource.query()
       .$promise.then(function(data) {
