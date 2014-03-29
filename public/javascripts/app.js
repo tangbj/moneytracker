@@ -17,4 +17,5 @@ angular.module('moneyTrackerApp', ['ngRoute', 'ngResource'])
     $locationProvider.html5Mode(true);
   }])
   .run(function() {
+    console.log('hmmm')
   })
